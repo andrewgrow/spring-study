@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+//apply plugin: 'io.spring.dependency-management'
+
+printf("Run main gradle")
+
+group 'com.example.default_root'
+version '1.0.1-MODULE_ROOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+allprojects {
+    apply plugin: "java"
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter:2.1.5.RELEASE'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test:2.1.5.RELEASE'
+        testImplementation group: 'junit', name: 'junit', version: '4.12'
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
