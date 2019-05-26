@@ -5,4 +5,5 @@ pluginManagement {
 }
 rootProject.name = 'helloworld'
 include 'ch2'
+include 'ch3'
 

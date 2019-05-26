@@ -31,3 +31,6 @@ allprojects {
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
+
+// /Users/grow/.gradle/wrapper/dists/gradle-4.10.3-bin/31t79e2qsceia4mkbojplrgx/gradle-4.10.3/bin/gradle clean build copyDependencies
+// /Users/grow/IdeaProjects/spring-study/ch2/build/libs/ch2-1.0.6.jar
