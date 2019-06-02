@@ -9,8 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class HelloWorldDecoupled {
 
     public static void main(String[] args) {
-//        ApplicationContext ctx = new ClassPathXmlApplicationContext("spring/app-context.xml");
-        ApplicationContext ctx = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
+        ApplicationContext ctx = new ClassPathXmlApplicationContext("spring/app-context.xml");
         MessageRenderer mr = ctx.getBean("renderer", MessageRenderer.class);
         mr.render();
     }
